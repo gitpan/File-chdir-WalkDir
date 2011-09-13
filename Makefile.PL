@@ -23,10 +23,11 @@ my %WriteMakefileArgs = (
   'NAME' => 'File::chdir::WalkDir',
   'PREREQ_PM' => {
     'Exporter' => '0',
+    'File::Spec::Functions' => '0',
     'File::chdir' => '0',
     'parent' => '0'
   },
-  'VERSION' => '0.010',
+  'VERSION' => '0.030',
   'test' => {
     'TESTS' => 't/*.t'
   }
