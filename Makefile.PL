@@ -9,27 +9,29 @@ use ExtUtils::MakeMaker 6.30;
 
 
 my %WriteMakefileArgs = (
-  'ABSTRACT' => 'Provides a convenient function (walkdir) for executing code on files in a directory structure recursively.',
-  'AUTHOR' => 'Joel Berger <joel.a.berger@gmail.com>',
-  'BUILD_REQUIRES' => {
-    'Test::More' => '0'
+  "ABSTRACT" => "Provides a convenient function (walkdir) for executing code on files in a directory structure recursively.",
+  "AUTHOR" => "Joel Berger <joel.a.berger\@gmail.com>",
+  "BUILD_REQUIRES" => {
+    "Test::More" => 0
   },
-  'CONFIGURE_REQUIRES' => {
-    'ExtUtils::MakeMaker' => '6.30'
+  "CONFIGURE_REQUIRES" => {
+    "ExtUtils::MakeMaker" => "6.30"
   },
-  'DISTNAME' => 'File-chdir-WalkDir',
-  'EXE_FILES' => [],
-  'LICENSE' => 'perl',
-  'NAME' => 'File::chdir::WalkDir',
-  'PREREQ_PM' => {
-    'Exporter' => '0',
-    'File::Spec::Functions' => '0',
-    'File::chdir' => '0',
-    'parent' => '0'
+  "DISTNAME" => "File-chdir-WalkDir",
+  "EXE_FILES" => [],
+  "LICENSE" => "perl",
+  "NAME" => "File::chdir::WalkDir",
+  "PREREQ_PM" => {
+    "Exporter" => 0,
+    "File::Spec::Functions" => 0,
+    "File::chdir" => 0,
+    "parent" => 0,
+    "strict" => 0,
+    "warnings" => 0
   },
-  'VERSION' => '0.030',
-  'test' => {
-    'TESTS' => 't/*.t'
+  "VERSION" => "0.040",
+  "test" => {
+    "TESTS" => "t/*.t"
   }
 );
 
